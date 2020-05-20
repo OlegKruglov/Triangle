@@ -66,6 +66,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -79,6 +80,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fashionable-simple-cartoon-triangle-decorative-elements-png_118110.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\triangle_PNG44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1cb701d9317100104ad483f81ca6c64e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6b206e63afa27689ac882a47e84f3210.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

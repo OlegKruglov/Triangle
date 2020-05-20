@@ -11,7 +11,12 @@ namespace Triangle
         public double a;
         public double b;
         public double c;
+        public double r;
 
+        public Triangle(double R)
+        {
+            r = R;
+        }
         public Triangle(double A, double B, double C)
         {
             a = A;
@@ -30,6 +35,10 @@ namespace Triangle
         {
             return Convert.ToString(c);
         }
+        public string outputR()
+        {
+            return Convert.ToString(r);
+        }
         public double Perimeter()
         {
             double p = 0;
@@ -43,6 +52,12 @@ namespace Triangle
             p = (a + b + c) / 2;
             s = Math.Sqrt((p * (p - a) * (p - b) * (p - c)));
             return s;
+        }
+        public double Height()
+        {
+            double h = 0;
+            h = b * c / 2 * r;
+            return h;
         }
         public double GetSetA
         {
@@ -65,7 +80,14 @@ namespace Triangle
             set
             { c = value; }
         }
-        public bool ExistTriange
+        public double GetSetR
+        {
+            get
+            { return r; }
+            set
+            { r = value; }
+        }
+        public bool ExistTriangle
         {
             get
             {
