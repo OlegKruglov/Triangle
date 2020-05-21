@@ -13,7 +13,7 @@ namespace Triangle
         public double c;
         public double r;
 
-        public Triangle(double R)
+        public Triangle(double R)//присваивание значения радиуса
         {
             r = R;
         }
@@ -39,13 +39,13 @@ namespace Triangle
         {
             return Convert.ToString(r);
         }
-        public double Perimeter()
+        public double Perimeter()//Вычисление периметра треугольника
         {
             double p = 0;
             p = a + b + c;
             return p;
         }
-        public double Surface()
+        public double Surface()//Вычиисление площади
         {
             double s = 0;
             double p = 0;
@@ -53,7 +53,7 @@ namespace Triangle
             s = Math.Sqrt((p * (p - a) * (p - b) * (p - c)));
             return s;
         }
-        public double Height()
+        public double Height()//Вычисление высоты треунольника
         {
             double h = 0;
             h = b * c / 2 * r;
@@ -80,14 +80,14 @@ namespace Triangle
             set
             { c = value; }
         }
-        public double GetSetR
+        public double GetSetR//свойство позволяющее установить либо изменить значение радиуса
         {
             get
             { return r; }
             set
             { r = value; }
         }
-        public bool ExistTriangle
+        public bool ExistTriangle//свойство позволяющее установить, существует ли треугольник с заддаными сторонами
         {
             get
             {
