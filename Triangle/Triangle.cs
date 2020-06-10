@@ -12,16 +12,18 @@ namespace Triangle
         public double b;
         public double c;
         public double r;
+        public double h;
 
-        public Triangle(double R)//присваивание значения радиуса
+        public Triangle(double R)
         {
             r = R;
         }
-        public Triangle(double A, double B, double C)
+        public Triangle(double A, double B, double C, double H)
         {
             a = A;
             b = B;
             c = C;
+            h = H;
         }
         public string outputA()
         {
@@ -39,6 +41,10 @@ namespace Triangle
         {
             return Convert.ToString(r);
         }
+        public string outputH()
+        {
+            return Convert.ToString(h);
+        }
         public double Perimeter()//Вычисление периметра треугольника
         {
             double p = 0;
@@ -47,17 +53,9 @@ namespace Triangle
         }
         public double Surface()//Вычиисление площади
         {
-            double s = 0;
-            double p = 0;
-            p = (a + b + c) / 2;
-            s = Math.Sqrt((p * (p - a) * (p - b) * (p - c)));
+            double s = 0;      
+            s = 0.5 * a * h;
             return s;
-        }
-        public double Height()//Вычисление высоты треунольника
-        {
-            double h = 0;
-            h = b * c / 2 * r;
-            return h;
         }
         public double GetSetA
         {
@@ -79,6 +77,13 @@ namespace Triangle
             { return c; }
             set
             { c = value; }
+        }
+        public double GetSetH
+        {
+            get
+            { return h; }
+            set
+            { h = value; }
         }
         public double GetSetR//свойство позволяющее установить либо изменить значение радиуса
         {

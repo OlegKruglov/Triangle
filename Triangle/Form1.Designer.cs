@@ -32,13 +32,13 @@
             this.Run_button = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.txtA = new System.Windows.Forms.TextBox();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.txtB = new System.Windows.Forms.TextBox();
             this.txtC = new System.Windows.Forms.TextBox();
+            this.txtH = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,14 +74,6 @@
             this.txtA.Name = "txtA";
             this.txtA.Size = new System.Drawing.Size(100, 20);
             this.txtA.TabIndex = 2;
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.ForeColor = System.Drawing.Color.Lime;
-            this.progressBar1.Location = new System.Drawing.Point(658, 303);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(100, 23);
-            this.progressBar1.TabIndex = 3;
             // 
             // pictureBox1
             // 
@@ -129,17 +121,24 @@
             this.txtC.TabIndex = 7;
             this.txtC.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
+            // txtH
+            // 
+            this.txtH.Location = new System.Drawing.Point(536, 289);
+            this.txtH.Name = "txtH";
+            this.txtH.Size = new System.Drawing.Size(100, 20);
+            this.txtH.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AccessibleName = "";
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 361);
+            this.Controls.Add(this.txtH);
             this.Controls.Add(this.txtC);
             this.Controls.Add(this.txtB);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.txtA);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.Run_button);
@@ -158,13 +157,13 @@
         private System.Windows.Forms.Button Run_button;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.TextBox txtA;
-        private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.TextBox txtB;
         private System.Windows.Forms.TextBox txtC;
+        private System.Windows.Forms.TextBox txtH;
     }
 }
 
