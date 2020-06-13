@@ -39,8 +39,11 @@ namespace Triangle
             listView1.Items[3].SubItems.Add(triangle.outputH());
             listView1.Items[4].SubItems.Add(Convert.ToString(triangle.Perimeter()));
             listView1.Items[5].SubItems.Add(Convert.ToString(triangle.Surface()));
-            if (triangle.ExistTriangle) { listView1.Items[5].SubItems.Add("Существует"); }
-            else listView1.Items[5].SubItems.Add("Не существует");
+            if (triangle.ExistTriangle) { listView1.Items[6].SubItems.Add("Существует"); }
+            else listView1.Items[6].SubItems.Add("Не существует");
+            if (a == b && b == c && c == b) { listView1.Items[7].SubItems.Add("Равносторонний"); }
+            else if (b == c) { listView1.Items[7].SubItems.Add("Равнобедренный"); }
+            else { listView1.Items[7].SubItems.Add("Разносторонний"); }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -61,6 +64,15 @@ namespace Triangle
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void mouse2(object sender, MouseEventArgs e)
+        {
+                if (e.Button == MouseButtons.Right)
+                {
+                    Form2 form2 = new Form2();
+                    form2.Show();
+                }
         }
     }
 }

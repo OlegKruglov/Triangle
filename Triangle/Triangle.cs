@@ -97,8 +97,8 @@ namespace Triangle
             get
             {
                 if ((a > b + c) && (b > a + c) && (c > a + b))
-                    return false;
-                else return true;
+                    return true;
+                else return false;
             }
         }
     }

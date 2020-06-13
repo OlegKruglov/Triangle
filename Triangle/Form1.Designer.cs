@@ -57,6 +57,7 @@
             this.Run_button.Text = "Запуск";
             this.Run_button.UseVisualStyleBackColor = false;
             this.Run_button.Click += new System.EventHandler(this.button1_Click);
+            this.Run_button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mouse2);
             // 
             // checkBox1
             // 
@@ -92,7 +93,7 @@
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(536, 15);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(180, 157);
+            this.listView1.Size = new System.Drawing.Size(186, 157);
             this.listView1.TabIndex = 5;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
