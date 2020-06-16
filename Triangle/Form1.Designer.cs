@@ -71,10 +71,13 @@
             // 
             // txtA
             // 
-            this.txtA.Location = new System.Drawing.Point(536, 178);
+            this.txtA.Location = new System.Drawing.Point(536, 235);
             this.txtA.Name = "txtA";
             this.txtA.Size = new System.Drawing.Size(100, 20);
             this.txtA.TabIndex = 2;
+            this.txtA.Text = "Основание";
+            this.txtA.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TextBoxIsClicked);
+            this.txtA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyIsPressed);
             // 
             // pictureBox1
             // 
@@ -93,7 +96,7 @@
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(536, 15);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(186, 157);
+            this.listView1.Size = new System.Drawing.Size(186, 194);
             this.listView1.TabIndex = 5;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -109,25 +112,34 @@
             // 
             // txtB
             // 
-            this.txtB.Location = new System.Drawing.Point(536, 215);
+            this.txtB.Location = new System.Drawing.Point(536, 261);
             this.txtB.Name = "txtB";
             this.txtB.Size = new System.Drawing.Size(100, 20);
             this.txtB.TabIndex = 6;
+            this.txtB.Text = "Сторона 1";
+            this.txtB.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TextBoxIsClicked);
+            this.txtB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyIsPressed);
             // 
             // txtC
             // 
-            this.txtC.Location = new System.Drawing.Point(536, 253);
+            this.txtC.Location = new System.Drawing.Point(536, 287);
             this.txtC.Name = "txtC";
             this.txtC.Size = new System.Drawing.Size(100, 20);
             this.txtC.TabIndex = 7;
+            this.txtC.Text = "Сторона 2";
+            this.txtC.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TextBoxIsClicked);
             this.txtC.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.txtC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyIsPressed);
             // 
             // txtH
             // 
-            this.txtH.Location = new System.Drawing.Point(536, 289);
+            this.txtH.Location = new System.Drawing.Point(536, 313);
             this.txtH.Name = "txtH";
             this.txtH.Size = new System.Drawing.Size(100, 20);
             this.txtH.TabIndex = 8;
+            this.txtH.Text = "Высота";
+            this.txtH.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TextBoxIsClicked);
+            this.txtH.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyIsPressed);
             // 
             // Form1
             // 

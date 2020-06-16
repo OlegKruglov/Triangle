@@ -33,8 +33,6 @@
             this.txtC = new System.Windows.Forms.TextBox();
             this.txtA = new System.Windows.Forms.TextBox();
             this.txtH = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -50,6 +48,9 @@
             this.txtB.Name = "txtB";
             this.txtB.Size = new System.Drawing.Size(120, 20);
             this.txtB.TabIndex = 2;
+            this.txtB.Text = "Сторона 1";
+            this.txtB.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TextBoxIsClicked);
+            this.txtB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyIsPressed);
             // 
             // txtC
             // 
@@ -57,6 +58,9 @@
             this.txtC.Name = "txtC";
             this.txtC.Size = new System.Drawing.Size(120, 20);
             this.txtC.TabIndex = 3;
+            this.txtC.Text = "Сторона 2";
+            this.txtC.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TextBoxIsClicked);
+            this.txtC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyIsPressed);
             // 
             // txtA
             // 
@@ -64,6 +68,9 @@
             this.txtA.Name = "txtA";
             this.txtA.Size = new System.Drawing.Size(120, 20);
             this.txtA.TabIndex = 4;
+            this.txtA.Text = "Основание";
+            this.txtA.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TextBoxIsClicked);
+            this.txtA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyIsPressed);
             // 
             // txtH
             // 
@@ -71,28 +78,9 @@
             this.txtH.Name = "txtH";
             this.txtH.Size = new System.Drawing.Size(120, 20);
             this.txtH.TabIndex = 5;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(443, 421);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(85, 17);
-            this.radioButton1.TabIndex = 6;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(534, 421);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(85, 17);
-            this.radioButton2.TabIndex = 7;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.txtH.Text = "Высота";
+            this.txtH.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TextBoxIsClicked);
+            this.txtH.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyIsPressed);
             // 
             // button1
             // 
@@ -130,9 +118,9 @@
             this.columnHeader1,
             this.columnHeader2});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(453, 47);
+            this.listView1.Location = new System.Drawing.Point(540, 47);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(335, 221);
+            this.listView1.Size = new System.Drawing.Size(248, 221);
             this.listView1.TabIndex = 10;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -153,8 +141,6 @@
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.txtH);
             this.Controls.Add(this.txtA);
             this.Controls.Add(this.txtC);
@@ -174,8 +160,6 @@
         private System.Windows.Forms.TextBox txtC;
         private System.Windows.Forms.TextBox txtA;
         private System.Windows.Forms.TextBox txtH;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListView listView1;
